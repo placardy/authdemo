@@ -1,3 +1,4 @@
+"""FastAPI server"""
 import base64
 import hmac
 import hashlib
@@ -7,7 +8,9 @@ from typing import Optional
 from fastapi import FastAPI, Form, Cookie, Body
 from fastapi.responses import Response
 
+# For sign cookie
 SECRET_KEY = "1795e2a69fafe64d6182ed0dfa9b05b5b27fe1ce8ea3532f675c0f6ac5841620"
+# For password
 PASSWORD_SALT = "1bee10db70917fc378e89fda80cbba36d0b3a4ecdebff5bbc21a657688a0a985"
 
 app = FastAPI()
